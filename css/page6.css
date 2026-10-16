@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  /* background-color: #931616; */
+  background: linear-gradient(135deg, var(--bg-color1), var(--bg-color2));
+  /* overflow-x: hidden; */
+}
+.recall-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 1.5vw 1.5vw;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.recall-head {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--final-bg);
+  border-radius: 20px;
+  padding: 2vw 2vw;
+  text-align: center;
+}
+
+.recall-head h1 {
+  font-size: 2.5rem;
+  color: #000000;
+  font-weight: 700;
+  text-align: center;
+}
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  background-color: var(--timer-bg);
+  padding: 0.5vh 1vw;
+  border-radius: 5px;
+  margin-right: 2%;
+}
+.timer svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.recall-body {
+  width: 100%;
+  height: auto;
+  background-color: var(--final-bg);
+  border-radius: 20px;
+  padding: 2vh 2vw;
+  display: flex;
+  gap: 4vw;
+  flex-direction: column;
+  flex: 1;
+}
+
+.recall-body p {
+  font-size: 1.5rem;
+  color: var(--normal-text-color);
+  font-weight: 500;
+  line-height: 2rem;
+  text-align: center;
+}
+.input-boxes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(fit-content, 1fr));
+  grid-auto-flow: column;
+  grid-template-rows: repeat(20, auto);
+  gap: 1vw 2vw;
+}
+.word {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+.word h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  padding-left: 0.5vw;
+  color: var(--word-time-color);
+}
+.word input {
+  width: 100%;
+  border-radius: 10px;
+  padding: 0.75vh 0.75vw;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: 1px solid var(--word-time-color);
+  text-align: center;
+  margin-bottom: 3vh;
+}
+.word input:focus {
+  outline: 2px solid var(--word-time-color);
+}
+.word input::placeholder {
+  color: var(--placeholder-word-color);
+  font-weight: 400;
+  text-align: center;
+}
+.bottom-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+}
+.count-box {
+  font-size: 1.2rem;
+  color: #656d7a;
+  font-weight: 500;
+  text-align: center;
+  background: linear-gradient(to right, var(--count-bg));
+  width: 100%;
+  padding: 3vh 2vw;
+  border-radius: 15px;
+}
+.submit-btn {
+  width: 100%;
+  padding: 1.5vw 2vw;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--btn-font-color);
+  background: linear-gradient(90deg, var(--bg-color2), var(--word-time-color));
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  min-height: 60px;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .input-boxes {
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    grid-template-rows: auto;
+    gap: 1.5vh;
+  }
+  
+  /* Add separator after every 20th item */
+  .word:nth-child(20) {
+    border-bottom: 3px solid var(--word-time-color);
+    padding-bottom: 3vh;
+    margin-bottom: 3vh;
+  }
+  
+  .word:nth-child(40) {
+    border-bottom: 3px solid var(--word-time-color);
+    padding-bottom: 3vh;
+    margin-bottom: 3vh;
+  }
+  
+  .word {
+    gap: 0.5vh;
+  }
+  
+  .word h2 {
+    font-size: 0.9rem;
+    padding-left: 2vw;
+  }
+  
+  .word input {
+    padding: 1.1vh 2vw;
+    font-size: 1rem;
+  }
+  
+  .recall-body {
+    padding: 2vh 4vw;
+    gap: 3vh;
+  }
+  
+  .recall-head {
+    flex-direction: column;
+    gap: 2vh;
+    padding: 3vw;
+  }
+  
+  .recall-head h2 {
+    font-size: 1.5rem;
+  }
+}

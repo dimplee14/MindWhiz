@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+:root {
+  /* background color */
+  --bg-color1: #2961eb;
+  --bg-color2: #ec4899;
+  --instruction1-bg: #faf5ff;
+  --instruction2-bg: #eff6ff;
+  --instruction3-bg: #fdf2f8;
+  --instruction4-bg: #ecfdf5;
+  --instruction5-bg: #fefce8;
+  --words-bg: #f9e8f8;
+  --timer-bg: #f3e8ff;
+  --count-bg: #faf5ff;
+  --correct-box-bg: #f0fdf4;
+  --incorrect-box-bg: #fef2f2;
+  --final-bg: #ffffff;
+  --blue-btn-bg1: #3d81f6;
+  --blue-btn-bg2: #a756f7;
+  --grey-btn-bg1: #6b7280;
+  --grey-btn-bg2: #4c5664;
+
+  /* text color */
+  --head-text-color: #1f2937;
+  --normal-text-color: #374151;
+  --light-color: #d9d9d9;
+  --btn-font-color: #ffffff;
+  --alert-text-color: #ef4444;
+  --word-time-color: #9333ea;
+  --word-text-color: #1f2969;
+  --placeholder-word-color: #7c828e;
+  --count-font-color: #656d7a;
+  --review-box-heading-color: #4b5563;
+  --correct-word-color: #17a34b;
+  --incorrect-word-color: #b91c1c;
+
+  /* border color */
+  --input-form-border-color: #d9d9d9;
+  --input-form-alert-border-color: #ef4444;
+  --wordBox-border-color: #e9d5ff;
+  --recall-box-border-color: #d8b4fe;
+  --review-box-correct-border-color: #17a34b;
+  --review-box-incorrect-border-color: #b91c1c;
+
+  /*PADDING*/
+}

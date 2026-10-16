@@ -1,0 +1,136 @@
+main {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  /* background-color: #931616; */
+  background: linear-gradient(135deg, var(--bg-color1), var(--bg-color2));
+  /* overflow-x: hidden; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3vw 3vw;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+#page1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--final-bg);
+  /* margin-top: 7vh; */
+  border-radius: 15px;
+  gap: 2vw;
+  padding: 3vw 2vw;
+  text-align: center;
+}
+
+.logos-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  margin-bottom: 2vh;
+}
+
+.main-logo img {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+
+.organizer-section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 3vw;
+  margin-top: 3vh;
+  flex-wrap: wrap;
+}
+
+.logo-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5vh;
+}
+
+.organizer-label {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0;
+  font-weight: 500;
+}
+
+.organizer-logos {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 4vw;
+  flex-wrap: wrap;
+}
+
+.logo-group:nth-child(2) .organizer-logos {
+  gap: 1.5vw;
+}
+
+.organizer-logos .logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-group:nth-child(2) .organizer-logos .logo:nth-child(2) {
+  height: 55px;
+}
+
+#page1-start-btn {
+  padding: 2vh 6vw;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background: linear-gradient(135deg, var(--bg-color2), var(--bg-color1));
+  border: none;
+  color: var(--btn-font-color);
+}
+.page1-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4vh;
+  font-size: 1.1rem;
+  
+}
+
+@media (max-width: 600px) {
+  #page1 {
+    min-height: 96vh;
+    justify-content: space-around;
+    /* padding: 10vh 4vw; */
+  }
+  #page1-start-btn {
+    width: 85vw;
+  }
+  #page1 svg {
+    width: 12vh;
+    height: 12vh;
+  }
+  .organizer-logos .logo {
+    height: 32px;
+  }
+  .logo-group:nth-child(2) .organizer-logos .logo:nth-child(2) {
+    height: 44px;
+  }
+  .organizer-label {
+    font-size: 0.75rem;
+  }
+  .organizer-section {
+    margin-top: 2vh;
+    gap: 4vw;
+  }
+  .logo-group {
+    gap: 0.3vh;
+  }
+}

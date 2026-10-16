@@ -1,0 +1,133 @@
+main {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  /* background-color: #931616; */
+  background: linear-gradient(135deg, var(--bg-color1), var(--bg-color2));
+  /* overflow-x: hidden; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3vw 3vw;
+}
+#page3 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  justify-content: center;
+}
+
+#page3 .instruction {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  background: var(--final-bg);
+  border-radius: 15px;
+  padding: 7vh 5vw;
+  height: auto;
+  margin-top: 1.5%;
+}
+#page3 .instruction svg {
+  display: block;
+  margin-bottom: 2vh;
+  /* width: 6vw; */
+  align-self: center;
+}
+#page3 h1 {
+  text-align: center;
+  margin-bottom:6%;
+  color: var(--head-text-color);
+}
+
+#page3 .info {
+  padding: 3% 5%;
+  border-radius: 12px;
+  margin-bottom: 2.4%;
+  word-spacing: 1px;
+}
+
+#page3 .info h3 {
+  margin: 0 0 2%;
+  font-size: 20px;
+  color: var(--normal-text-color);
+}
+
+#page3 .info p {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--normal-text-color);
+}
+
+/* Color Variants */
+#page3 .info1 {
+  background-color: var(--instruction1-bg);
+}
+
+#page3 .info2 {
+  background-color: var(--instruction2-bg);
+}
+#page3 .info3 {
+  background: linear-gradient(135deg, rgba(255, 193, 7, 0.15) 0%, rgba(255, 152, 0, 0.12) 100%);
+  border: 3px solid #f59e0b;
+  border-left: 6px solid #f59e0b;
+  box-shadow: 0 8px 25px rgba(245, 158, 11, 0.25);
+  padding: 4% 5%;
+  animation: pulse-highlight 2s ease-in-out infinite;
+}
+@keyframes pulse-highlight {
+  0%, 100% {
+    box-shadow: 0 8px 25px rgba(245, 158, 11, 0.25);
+  }
+  50% {
+    box-shadow: 0 8px 35px rgba(245, 158, 11, 0.45);
+  }
+}
+#page3 .info1 h3,#page3 .info2 h3,#page3 .info3 h3 {
+  display: flex;
+  /* align-items: center; */
+  gap: 1vw;
+}
+#page3 .info3 h3 {
+  color: #d97706;
+  font-size: 22px;
+  font-weight: 700;
+}
+#page3 .info3 p {
+  font-weight: 600;
+  font-size: 18px;
+  color: #92400e;
+  line-height: 1.7;
+}
+
+#page3  h3 svg{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+#page3 p span{
+  font-weight: 550;
+}
+
+
+
+
+
+
+#page3 .start-btn {
+  background: linear-gradient(135deg, var(--bg-color2), var(--word-time-color));
+  color: var(--btn-font-color);
+  border: none;
+  padding: 2%;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  width: 100%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 6%;
+  min-height: 60px;
+}
